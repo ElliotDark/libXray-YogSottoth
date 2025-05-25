@@ -13,6 +13,13 @@ functions provided by this repository.
 python3 build/main.py apple go
 ```
 
+This repository also provides a convenience script that builds the framework and
+compiles a tiny command line example on macOS:
+
+```bash
+./build_macos.sh
+```
+
 This will create `LibXray.xcframework` along with C header files inside the
 `build/apple` directory. Because the framework does not contain a
 `module.modulemap`, Swift projects need a bridging header.
